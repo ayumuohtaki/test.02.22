@@ -6,10 +6,20 @@
   <meta name="keywords" content="共通キーワード" />
   <meta name="description" content="<?php bloginfo( 'description' ); ?>" />
   <title><?php bloginfo( 'name' ); ?></title>
-  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/common/favicon.ico" />
+  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/common/pm_icon.ico" />
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Vollkorn:400i" rel="stylesheet" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet" />
+
+  
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slick.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slick-theme.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/common.css" media="screen">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -18,8 +28,8 @@
       <div class="header-inner">
         <div class="logo">
           <a class="logo-header" href="/">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-main.svg" class="main-logo" alt="PACIFIC MALL DEVELOPMENT" />
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-fixed.svg" class="fixed-logo" alt="PACIFIC MALL DEVELOPMENT" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/parramota-logo.png" class="main-logo" alt="PARRAMOTA~30minutes~" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/parramota-logo.png" class="fixed-logo" alt="PARRAMOTA~30minutes~" />
           </a>
         </div>
         <button class="toggle-menu js-toggoleNav">
@@ -50,22 +60,19 @@ wp_nav_menu(
       </div>
     </header>
 <?php if( is_front_page() ): ?>
-    <section class="section-contents" id="keyvisual">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bg-section-keyvisual.jpg" alt="MAIN IMAGE" />
-      <div class="wrapper">
-        <h1 class="site-title">Connecting the future.</h1>
-        <p class="site-caption"><?php echo get_the_excerpt(); ?></p>
-      </div>
-    </section>
+    <div class="head-logo">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/pm_1.png" class="head-logo-master animate__animated animate__rotateIn animate__slower head-logo-before head-logo-after" alt="MAIN IMAGE" />
+    </div>
+
 <?php else: ?>
   <div class="wrap">
     <div id="primary" class="content-area">
       <main>
         <div class="page-contents">
           <div class="page-head">
-            <?php echo get_main_image(); ?>
+            <?php the_post_thumbnail( 'blog' ); ?>
             <div class="wrapper">
-              <span class="page-title-en"></span>
+              <span class="page-title-en"><?php echo get_main_en_title(); ?></span>
               <h2 class="page-title"><?php echo get_main_title(); ?></h2>
             </div>
           </div>

@@ -38,5 +38,7 @@ wp_nav_menu(
     </footer>
   </div><!-- /.container -->
 <?php wp_footer(); ?>
+<script src="<?php echo get_template_directory_uri(); ?>/js/slick.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
 </body>
 </html>

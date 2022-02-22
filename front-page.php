@@ -1,10 +1,6 @@
 
 <?php get_header(); ?>
 
-    <div class="head-logo">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/pm_1.png"  class="head-logo-master animate__animated animate__rotateIn animate__slower head-logo-before head-logo-after" alt="PACIFIC MALL DEVELOPMENT" />
-    </div>
-
    <div id="scroll-cover">
     <section class="section-contents" id="blog">
       <div class="wrapper">
