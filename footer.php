@@ -9,14 +9,7 @@
       <div class="footerContents">
         <div class="footerContents-contact">
           <div class="enterprise-logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo-footer.svg" alt="PACIFIC MALL DEVELOPMENT" />
-          </div>
-          <div class="enterprise-detail">
-            <p class="name">パシフィックモール開発株式会社</p>
-            <p class="address">
-              東京都千代田区大手町0-1-2<br />
-              パシフィックモールビルディング18F 
-            </p>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/pm_1_white.png" alt="PACIFIC MALL DEVELOPMENT" />
           </div>
         </div>
         <div class="footerContents-sitemap">
@@ -33,7 +26,7 @@ wp_nav_menu(
         </div>
       </div>
       <p class="copyright">
-        <small class="copyright-text">&#169; 2019 PACIFIC MALL DEVELOPMENT CO.,LTD.</small>
+        <small class="copyright-text">&#169; 2020 PARRAMOTA</small>
       </p>
     </footer>
   </div><!-- /.container -->

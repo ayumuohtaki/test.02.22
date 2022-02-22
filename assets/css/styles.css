@@ -1243,15 +1243,17 @@ input {
 	flex-direction: row;
 }
 #footer .footerContents-contact {
-	padding-bottom: 36px;
 	border-right: 1px solid #494949;
 	width: 34.4%;
 }
 #footer .footerContents-contact .enterprise-logo {
 	display: block;
+	text-align: center;
 }
 #footer .footerContents-contact .enterprise-logo img {
-	max-width: 204px;
+	justify-content: center;
+	margin: auto;
+	width: 50%;
 }
 #footer .footerContents-contact .enterprise-detail {
 	margin-top: 32px;
@@ -1265,6 +1267,8 @@ input {
 }
 #footer .footerContents-sitemap {
 	width: 65.6%;
+	align-items: center;
+	
 }
 #footer .footerContents-sitemap .sitemap-inner {
 	display: -webkit-box;
@@ -3870,7 +3874,7 @@ input[type="submit"]::after {
 }
 
 .footer-nav {
-	padding-left: 15%;
+	padding-left: 10%;
 }
 /* ぱんくず */
 .bread_crumb {
