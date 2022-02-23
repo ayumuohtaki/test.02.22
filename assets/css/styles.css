@@ -2256,7 +2256,34 @@ input {
 #pg-newsDetail .more-news .next .another-link:hover::after {
 	background-image: url('../images/svg/icon-next-hover.svg');
 }
+/*------------------------
+ *追加分
+ *------------------------ */
+.news-item a {
+	max-width: 100%;
+}
+.mask {
+	display: block;
+	line-height: 0;
+	overflow: hidden;
+}
 
+.news-item  img {
+	transform: scale(1);/*速さの変更*/
+	transition: .5s ease-in-out;
+}
+
+.news-item  a:hover img {
+	transform: scale(1.1);/*拡大率の変更*/
+}
+.newsLists  img {
+	transform: scale(1);/*速さの変更*/
+	transition: .5s ease-in-out;
+}
+
+.newsLists  a:hover img {
+	transform: scale(1.1);/*拡大率の変更*/
+}
 /* --------------------------------
  * smart phone
  * -------------------------------- */

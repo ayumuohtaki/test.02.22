@@ -23,7 +23,7 @@ if( $news_posts->have_posts() ):
               </div>
               <!-- <time class="time"><?php the_time('Y.m.d'); ?></time> --> <!-- 投稿数が増えてきたら投稿日時を追加 -->
               <p class="title"><?php the_title(); ?></p>
-              <p class="news-text"><?php echo get_the_excerpt(); ?></p>
+              <!-- <p class="news-text"><?php echo get_the_excerpt(); ?></p> -->
             </a>
           </li>
 <?php
