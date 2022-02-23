@@ -1268,6 +1268,7 @@ input {
 #footer .footerContents-sitemap {
 	width: 65.6%;
 	align-items: center;
+	display: flex;
 	
 }
 #footer .footerContents-sitemap .sitemap-inner {
@@ -1323,7 +1324,6 @@ input {
 	text-align: center;
 	font-size: 1.2rem;
 }
-
 /* --------------------------------
  * smart phone
  * -------------------------------- */
@@ -3892,7 +3892,7 @@ input[type="submit"]::after {
 }
 
 .footer-nav ul li {
-    width: 30%;
+    width: 50%;
     margin-bottom: 20px;
     color: #fff;
 }
@@ -3902,6 +3902,7 @@ input[type="submit"]::after {
 
 .footer-nav {
 	padding-left: 10%;
+	width: 80%;
 }
 /* ぱんくず */
 .bread_crumb {
