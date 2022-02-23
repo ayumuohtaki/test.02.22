@@ -59,6 +59,7 @@ a {
 	background: transparent;
 }
 
+
 /* change colours to suit your needs */
 ins {
 	background-color: #ff9;
@@ -2436,7 +2437,7 @@ input {
 .page-contents .page-head .wrapper .page-title {
 	margin-top: 12px;
 	font-size: 3.8rem;
-	font-family: 'Noto Sans Japanese', sans-serif;
+	font-family: 'Noto San', sans-serif;
 	font-weight: 400;
 	line-height: 1;
 }
@@ -2859,12 +2860,14 @@ input {
 		margin: 12% auto 0;
 	}
 }
+ 
 
 .section-contents {
-	padding: 90px 12.5% 100px;
+	padding: 30px 5% 50px;
 	width: 100%;
 	text-align: center;
 	position: relative;
+	background-color: #fafbfc;
 }
 .section-contents .section-title-en {
 	font-size: 2.2rem;
@@ -2876,7 +2879,7 @@ input {
 	margin-top: 12px;
 	padding-bottom: 40px;
 	font-size: 3.8rem;
-	font-family: 'Noto Sans Japanese', sans-serif;
+	font-family: 'Bangers', sans-serif;
 	font-weight: 400;
 	line-height: 1;
 	position: relative;
