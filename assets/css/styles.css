@@ -2044,10 +2044,11 @@ input {
 #news .news-item .time {
 	font-size: 1.4rem;
 	color: #787878;
-}
-#news .news-item .title {
+} 
+ .news-item .title  {
 	margin-top: 4px;
-	font-size: 1.8rem;
+	font-size: 25px;
+	font-family: 'Bangers' , '凸版文久見出しゴシック';
 }
 #news .news-item .news-text {
 	margin-top: 22px;
@@ -3475,13 +3476,15 @@ input {
 	letter-spacing: 0.18em;
 	overflow: hidden;
 	position: relative;
+	color: #fff;
 }
 .button-ghost {
 	border: 1px solid #343434;
-	background: transparent;
 	-webkit-transition: all 0.3s ease 0.2s;
 	transition: all 0.3s ease 0.2s;
 	z-index: 1;
+	background: -webkit-linear-gradient(left, #494544, #c41a30);
+	background: linear-gradient(to right,#494544, #c41a30 );
 }
 .button-ghost::after {
 	content: '';
@@ -3490,8 +3493,8 @@ input {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: -webkit-linear-gradient(left, #127dd6, #4ec9e5);
-	background: linear-gradient(to right, #127dd6, #4ec9e5);
+	background: -webkit-linear-gradient(right,#494544, #c41a30);
+	background: linear-gradient(to left, #494544, #c41a30);
 	z-index: -1;
 	opacity: 0;
 	-webkit-transition: all 0.3s ease 0.2s;

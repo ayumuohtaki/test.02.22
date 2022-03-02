@@ -10,7 +10,7 @@ jQuery('.news-front').slick({
     autoplaySpeed: 0, //自動再生のスライド切り替えまでの時間を設定
     speed: 5000, //スライドが流れる速度を設定
     cssEase: "linear", //スライドの流れ方を等速に設定
-    slidesToShow: 3, //表示するスライドの数
+    slidesToShow: 2, //表示するスライドの数
     swipe: true, // 操作による切り替えはさせない
     arrows: false, //矢印非表示
     pauseOnFocus: true, //スライダーをフォーカスした時にスライドを停止させるか
