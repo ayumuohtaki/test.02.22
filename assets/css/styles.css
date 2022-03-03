@@ -2172,7 +2172,6 @@ input {
 
 #pg-newsDetail .main-container {
 	width: 100%;
-	background-image: url(../images/bg-news.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: bottom center;
@@ -2303,6 +2302,13 @@ input {
 /* --------------------------------
  * smart phone
  * -------------------------------- */
+
+	@media screen and (max-width: 769px) {
+		#pg-newsDetail .news .title {
+			font-size: 2rem;
+		}
+	}
+	 
 /* @media screen and (max-width: 769px) {
 	#news .news {
 		-webkit-box-orient: vertical;
