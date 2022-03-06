@@ -2047,7 +2047,7 @@ input {
 } 
  .news-item .title  {
 	margin-top: 4px;
-	font-size: 25px;
+	font-size: 3rem;
 	font-family: 'Bangers' , '凸版文久見出しゴシック';
 }
 #news .news-item .news-text {
