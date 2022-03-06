@@ -1331,7 +1331,6 @@ input {
 @media screen and (max-width: 769px) {
 	#footer {
 		padding: 30px 4% 12px;
-		margin-top: 160px;
 	}
 	#footer .footerContents {
 		display: -webkit-box;
@@ -2104,7 +2103,7 @@ input {
 	align-items: center;
 	display: flex;
 	font-family: 'Bangers' , '凸版文久見出しゴシック';
-	font-size: 3.5vw;
+	font-size: 3rem;
 }
 
 
