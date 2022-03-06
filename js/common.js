@@ -21,7 +21,10 @@ jQuery('.news-front').slick({
         breakpoint: 769,
         settings: {
             centerMode: false,
-            vertical: false
+            vertical: false,
+            slidesToShow: 1, //表示するスライドの数
+            centerMode: true,
+            centerPadding: '15%',
         }
     }
 ]
