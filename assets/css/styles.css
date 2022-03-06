@@ -1330,18 +1330,12 @@ input {
  * -------------------------------- */
 @media screen and (max-width: 769px) {
 	#footer {
-		padding: 30px 4% 12px;
+		
+		width: 100％;
 	}
 	#footer .footerContents {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
+		
 	}
 	#footer .footerContents-contact {
 		padding-bottom: 18px;
@@ -1349,7 +1343,7 @@ input {
 		width: 100%;
 	}
 	#footer .footerContents-contact .enterprise-logo {
-		display: none;
+		margin-bottom: 10px;
 	}
 	#footer .footerContents-contact .enterprise-detail {
 		margin-top: 0;
@@ -1360,6 +1354,8 @@ input {
 	}
 	#footer .footerContents-sitemap {
 		width: 100%;
+		margin: 0　auto;
+		justify-content: center;
 	}
 	#footer .footerContents-sitemap .sitemap-inner {
 		-webkit-box-orient: vertical;
@@ -1435,6 +1431,11 @@ input {
 	#footer .copyright {
 		margin-top: 23px;
 		font-size: 1.0rem;
+	}
+	#footer .footerContents-contact .enterprise-logo img {
+		width: 100%;
+		padding: 10px;
+		align-items: center;
 	}
 }
 
@@ -3917,6 +3918,12 @@ input[type="submit"]::after {
     display: flex;
     flex-wrap: wrap;
 }
+@media  (max-width: 769px) {
+	.footer-nav ul {
+		flex-wrap: nowrap;
+		flex-direction: column;
+		padding-left: 2rem;
+	}}
 
 .footer-nav ul li {
     width: 50%;
@@ -4094,12 +4101,10 @@ input[type="submit"]::after {
 	.contribution article time {
 		font-size: 1rem;
 	}
-	.footer-nav ul li a {
+	.footer-nav ul li  {
 	    color: #fff;
 	    display: block;
-	    width: 80%;
-	    border-bottom: 1px solid #333;
-		position: relative;
+	    width: 100%;
 	}
 	.footer-nav {
 	    padding-left: 0%;
@@ -4108,18 +4113,7 @@ input[type="submit"]::after {
 	    width: 50%;
 	}
 	.footer-nav ul li a::after{
-		content: '';
-    	position: absolute;
-    	top: 50%;
-    	right: 3px;
-    	-webkit-transform: translateY(-50%);
-    	-ms-transform: translateY(-50%);
-    	transform: translateY(-50%);
-    	width: 7px;
-    	height: 12px;
-    	background-image: url('../images/svg/icon-rightArrow.svg');
-    	background-repeat: no-repeat;
-    	background-size: contain;
+		display: none;
 	}
 	.page-contents {
 	    padding-top: 0px;
