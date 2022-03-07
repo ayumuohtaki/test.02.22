@@ -2066,7 +2066,7 @@ input {
 }
 #pg-news .main-container .main-wrapper {
 	margin: 0 auto;
-	padding: 4% 0 120px;
+	padding: 4% 0 0;
 	max-width: 960px;
 }
 
@@ -2104,9 +2104,12 @@ input {
 	align-items: center;
 	display: flex;
 	font-family: 'Bangers' , '凸版文久見出しゴシック';
-	font-size: 3.5vw;
+	font-size: 3.5rem;
 }
-
+@media  (max-width: 769px) {
+	#pg-news .newsLists .news-body .title {
+		font-size: 1.3rem;
+	}}
 
 #pg-news .newsLists .news-body .capton {
 	display: none;
