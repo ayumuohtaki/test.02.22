@@ -1512,7 +1512,8 @@ input {
 }
 @media  (max-width: 769px) {
 	 
-	.head-logo {margin-top:-100px;
+	.head-logo img{
+		margin-top:100px;
 	}}
 /*--------------------*/
 
