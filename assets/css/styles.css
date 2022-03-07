@@ -2125,7 +2125,11 @@ input {
 	font-size: 3rem;
 =======
 	font-size: 3.5rem;
+<<<<<<< HEAD
 >>>>>>> develop
+=======
+>>>>>>> feature/issue1
+>>>>>>> feature/issue2
 }
 @media  (max-width: 769px) {
 	#pg-news .newsLists .news-body .title {
