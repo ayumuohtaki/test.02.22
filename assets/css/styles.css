@@ -2115,13 +2115,12 @@ input {
 	padding-left: 3vw;
 	align-items: center;
 	display: flex;
-	font-family: 'Bangers' , '凸版文久見出しゴシック';
+	font-family: 'Yrsa' , '凸版文久見出しゴシック';
 	font-size: 3rem;
-	font-size: 3.5rem;
 }
 @media  (max-width: 769px) {
 	#pg-news .newsLists .news-body .title {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}}
 
 #pg-news .newsLists .news-body .capton {
