@@ -2120,6 +2120,7 @@ input {
 	display: flex;
 	font-family: 'Yrsa' , '凸版文久見出しゴシック';
 	font-size: 3rem;
+	font-weight: 900;
 }
 @media  (max-width: 769px) {
 	#pg-news .newsLists .news-body .title {
@@ -2460,7 +2461,7 @@ input {
 }
 .page-contents .page-head .wrapper {
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	left: 50%;
 	width: 100vw;
 	-webkit-transform: translate(-50%, -50%);
@@ -2474,7 +2475,7 @@ input {
 	font-style: italic;
 }
 .page-contents .page-head .wrapper .page-title {
-	margin-top: 12px;
+	margin-top: 30px;
 	font-size: 3.8rem;
 	font-family: 'Bangers', sans-serif;
 	font-weight: 400;
@@ -2572,7 +2573,6 @@ input {
 		font-size: 1.65rem;
 	}
 	.page-contents .page-head .wrapper .page-title {
-		margin-top: 5px;
 		font-size: 2.1rem;
 	}
 	.page-contents .page-container .Breadcrumbs {
@@ -3995,7 +3995,8 @@ input[type="submit"]::after {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center;	
+    justify-content: center;
+	margin-bottom: 30px;	
 }
 
 .page_navi li {
