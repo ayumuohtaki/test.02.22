@@ -6,25 +6,29 @@ jQuery('.news-front').slick({
   // speed: 1000,
   // arrows: false,
 
-  autoplay: false, //自動でスクロール
+  autoplay: true, //自動でスクロール
     autoplaySpeed: 0, //自動再生のスライド切り替えまでの時間を設定
-    speed: 5000, //スライドが流れる速度を設定
+    speed: 6000, //スライドが流れる速度を設定
     cssEase: "linear", //スライドの流れ方を等速に設定
     slidesToShow: 2, //表示するスライドの数
     swipe: true, // 操作による切り替えはさせない
     arrows: false, //矢印非表示
     pauseOnFocus: true, //スライダーをフォーカスした時にスライドを停止させるか
-    pauseOnHover: true, //スライダーにマウスホバーした時にスライドを停止させるか
-  
+    pauseOnHover: false, //スライダーにマウスホバーした時にスライドを停止させるか
+    centerMode: true,
+    centerPadding: '10%',
+    dots: false,
   responsive: [
     {
         breakpoint: 769,
         settings: {
-            centerMode: false,
-            vertical: false,
+            autoplaySpeed: 2000, //自動再生のスライド切り替えまでの時間を設定
+            speed: 100, //スライドが流れる速度を設定
+            centerMode: true,
             slidesToShow: 1, //表示するスライドの数
             centerMode: true,
             centerPadding: '15%',
+            dots: false,
         }
     }
 ]
