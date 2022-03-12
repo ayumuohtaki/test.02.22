@@ -1,6 +1,7 @@
 @charset 'UTF-8';
 /* ------------------------------------------------
 
+
 * Style Index
 	#. Cores
 	#. Layouts    :prefix[l-]
@@ -2250,50 +2251,100 @@ input {
 	justify-content: space-between;
 }
 #pg-newsDetail .more-news .prev .another-link, #pg-newsDetail .more-news .next .another-link {
-	font-size: 1.4rem;
-	font-family: 'Vollkorn', serif;
-	font-style: italic;
+	font-size: 3rem;
+	font-family: 'Bangers','Vollkorn', serif;
+	
 }
 #pg-newsDetail .more-news .prev .another-link {
-	padding-left: 74px;
+	padding-left: 83px;
 }
 #pg-newsDetail .more-news .prev .another-link::before {
 	content: '';
 	position: absolute;
 	top: 8px;
 	left: 0;
-	width: 62px;
+	width: 80px;
 	height: 100%;
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-image: url('../images/svg/icon-prev.svg');
+	background-image: url('../images/svg/finger_left_blk.png');
 }
 #pg-newsDetail .more-news .prev .another-link:hover {
-	color: #127dd6;
+	color: #c41a30;
 }
 #pg-newsDetail .more-news .prev .another-link:hover::before {
-	background-image: url('../images/svg/icon-prev-hover.svg');
+	background-image: url('../images/svg/finger_left_red.png');
 }
 #pg-newsDetail .more-news .next .another-link {
-	padding-right: 74px;
+	padding-right: 83px;
 }
 #pg-newsDetail .more-news .next .another-link::after {
 	content: '';
 	position: absolute;
 	top: 8px;
 	right: 0;
-	width: 62px;
+	width: 80px;
 	height: 100%;
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-image: url('../images/svg/icon-next.svg');
+	background-image: url('../images/svg/finger_right_blk.png');
 }
 #pg-newsDetail .more-news .next .another-link:hover {
-	color: #127dd6;
+	color:#c41a30;
 }
 #pg-newsDetail .more-news .next .another-link:hover::after {
-	background-image: url('../images/svg/icon-next-hover.svg');
+	background-image: url('../images/svg/finger_right_red.png');
 }
+
+/* --------------------------------
+ * smart phone
+ * -------------------------------- */
+ @media  (max-width: 769px) {
+	#pg-newsDetail .more-news .prev .another-link, #pg-newsDetail .more-news .next .another-link {
+		font-size: 2rem;
+		font-family: 'Bangers','Vollkorn', serif;
+		
+	}
+	#pg-newsDetail .more-news .prev .another-link {
+		padding-left: 67px;
+	}
+	#pg-newsDetail .more-news .prev .another-link::before {
+		content: '';
+		position: absolute;
+		top: 8px;
+		left: 0;
+		width: 60px;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-image: url('../images/svg/finger_left_blk.png');
+	}
+	#pg-newsDetail .more-news .prev .another-link:hover {
+		color: #c41a30;
+	}
+	#pg-newsDetail .more-news .prev .another-link:hover::before {
+		background-image: url('../images/svg/finger_left_red.png');
+	}
+	#pg-newsDetail .more-news .next .another-link {
+		padding-right: 67px;
+	}
+	#pg-newsDetail .more-news .next .another-link::after {
+		content: '';
+		position: absolute;
+		top: 8px;
+		right: 0;
+		width: 60px;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-image: url('../images/svg/finger_right_blk.png');
+	}
+	#pg-newsDetail .more-news .next .another-link:hover {
+		color:#c41a30;
+	}
+	#pg-newsDetail .more-news .next .another-link:hover::after {
+		background-image: url('../images/svg/finger_right_red.png');
+	}}
 /*------------------------
  *追加分
  *------------------------ */
@@ -2923,7 +2974,7 @@ input {
 }
 .section-contents .section-title {
 	margin-top: 12px;
-	padding-bottom: 40px;
+	padding-bottom: 10px;
 	font-size: 3.8rem;
 	font-family: 'Bangers', sans-serif;
 	font-weight: 400;
@@ -2941,6 +2992,7 @@ input {
 	width: 31px;
 	height: 1px;
 	background-color: #343434;
+	display: none;
 }
 .section-contents .section-lead {
 	margin-top: 30px;
@@ -3523,6 +3575,10 @@ input {
 	position: relative;
 	color: #fff;
 }
+.button:hover {
+	cursor: pointer;
+}
+
 .button-ghost {
 	border: 1px solid #343434;
 	-webkit-transition: all 0.3s ease 0.2s;
@@ -3542,16 +3598,18 @@ input {
 	background: linear-gradient(to left, #494544, #c41a30);
 	z-index: -1;
 	opacity: 0;
-	-webkit-transition: all 0.3s ease 0.2s;
-	transition: all 0.3s ease 0.2s;
+	cursor: pointer;
 }
 .button-ghost:hover {
 	border: 1px solid transparent;
 	background: transparent;
 	color: #fff;
+	cursor: pointer;
+	
 }
 .button-ghost:hover::after {
 	opacity: 1;
+	cursor: pointer;
 }
 
 .buttonBox {
@@ -4032,8 +4090,8 @@ input[type="submit"]::after {
     color: #fff;
     font-weight: bold;
     padding: 3px 7px;
-    background: #127dd6;
-    border: solid 1px #127dd6;
+    background: #c41a30;
+    border: solid 1px #c41a30;
 }
 
 .page_navi li:hover {
@@ -4194,7 +4252,7 @@ input[type="submit"]::after {
 	}
 	.place {
 	    font-size: 1rem;
-	    color: #1381d6;
+	    color: #c41a30;
 	}	
 	/* ぱんくず */
 	.bread_crumb {
