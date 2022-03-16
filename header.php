@@ -28,7 +28,7 @@
       <div class="header-inner">
         <div class="logo">
           <a class="logo-header" href="/">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/parramota-logo.png" class="main-logo" alt="PARRAMOTA~30minutes~" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo_white.png" class="main-logo" alt="PARRAMOTA~30minutes~" />
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/parramota-logo.png" class="fixed-logo" alt="PARRAMOTA~30minutes~" />
           </a>
         </div>
